@@ -17,6 +17,34 @@
   color: white;
 }
 
+
+.App-cell {
+  font-size: 1em;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+td.App-cell:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+.active {
+  background-color: #3c3c3c;
+}
+
+.inactive {
+  background-color: #D3D3D3;
+}
+.App-container {
+  margin-left: 5%;
+  margin-top:  5%;
+  align: center
+ 
+}
+
 .App-link {
   color: #09d3ac;
 }
