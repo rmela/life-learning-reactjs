@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/life-learning-reactjs/static/css/main.70b297e2.chunk.css",
-    "main.js": "/life-learning-reactjs/static/js/main.01060014.chunk.js",
-    "main.js.map": "/life-learning-reactjs/static/js/main.01060014.chunk.js.map",
+    "main.js": "/life-learning-reactjs/static/js/main.31f69384.chunk.js",
+    "main.js.map": "/life-learning-reactjs/static/js/main.31f69384.chunk.js.map",
     "runtime-main.js": "/life-learning-reactjs/static/js/runtime-main.b6117f02.js",
     "runtime-main.js.map": "/life-learning-reactjs/static/js/runtime-main.b6117f02.js.map",
     "static/js/2.dff0ae57.chunk.js": "/life-learning-reactjs/static/js/2.dff0ae57.chunk.js",
     "static/js/2.dff0ae57.chunk.js.map": "/life-learning-reactjs/static/js/2.dff0ae57.chunk.js.map",
     "index.html": "/life-learning-reactjs/index.html",
-    "precache-manifest.d15238a39f9ec03790c02cbec028f689.js": "/life-learning-reactjs/precache-manifest.d15238a39f9ec03790c02cbec028f689.js",
+    "precache-manifest.f9ab3f3421912408f65e9ff1a0408670.js": "/life-learning-reactjs/precache-manifest.f9ab3f3421912408f65e9ff1a0408670.js",
     "service-worker.js": "/life-learning-reactjs/service-worker.js",
     "static/css/main.70b297e2.chunk.css.map": "/life-learning-reactjs/static/css/main.70b297e2.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.b6117f02.js",
     "static/js/2.dff0ae57.chunk.js",
     "static/css/main.70b297e2.chunk.css",
-    "static/js/main.01060014.chunk.js"
+    "static/js/main.31f69384.chunk.js"
   ]
 }
