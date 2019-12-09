@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d4ecf85f9e9c828c3d0319822e95f24",
+    "revision": "9a58057eca0dec81cd369b237b639277",
     "url": "/life-learning-reactjs/index.html"
   },
   {
-    "revision": "4995b2b6f66538d00729",
+    "revision": "bf2c8118c5fc4859c8a7",
     "url": "/life-learning-reactjs/static/css/main.70b297e2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/life-learning-reactjs/static/js/2.dff0ae57.chunk.js"
   },
   {
-    "revision": "4995b2b6f66538d00729",
-    "url": "/life-learning-reactjs/static/js/main.5b3b1bcb.chunk.js"
+    "revision": "bf2c8118c5fc4859c8a7",
+    "url": "/life-learning-reactjs/static/js/main.01060014.chunk.js"
   },
   {
     "revision": "a0e74c695d7d8b51fbda",
