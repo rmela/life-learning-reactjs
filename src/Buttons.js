@@ -1,56 +1,39 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import GameContext from './GameContext'
+import Game from './game'
 
-export class Button extends React.Component {
+export function Button( props ) {
+
+  if( !props.id ) throw new Error('missing props.id to button')
+  let ctx = useContext( GameContext )
   
-  constructor( props ) {
-    if( !props.router || !props.eventName || !props.label ) {
-      throw new Error( 'Button requires "router", "eventName", and "label"' )
-    }
-    super( props )
+  function onClick(tgt) {
+     ctx.game = new Game( ctx.game.rows, ctx.game.cols )
+     props.onClick && props.onClick(props.id)
   }
-
-  render() {
-    return <button onClick={this.onClick.bind(this) }>{this.props.label}</button>
-  }
-
-  onClick( evt ) {
-    this.props.router.emit( this.props.eventName, this.props.label )
-  }
+  return <button onClick={ onClick } >{props.label}</button>
 
 }
 
-export class ToggleButton extends React.Component {
+export function ToggleButton( props ) {
 
-  constructor(props) {
-     super(props)
-     this._on = { on: true, label: 'Stop' }
-     this._off = { on: false, label: 'Start' }
-     this.state = this._off
+  console.log( 'ToggleButtonButton 1', props )
+  let ctx = useContext( GameContext )
+  console.log( 'ToggleButtonButton 2', props )
+
+  const [ running, setRunning ] = useState( false  )
+
+  function onClick() {
+     ctx.interval && clearInterval( ctx.interval )
+     if( running ) {
+        setRunning( false )
+        
+     } else {
+        ctx.interval = setInterval( function() { ctx.game.advance() }, ctx.sleep || 1000 )
+        setRunning( true )
+     }
   }
 
-  componentWillUnount() {
-     this.props.router.removeListener( 'reset', this.reset )
-  }
-  componentDidMount() {
-     this.props.router.on( 'reset', this.reset.bind(this) )
-  }
-
-  reset() {
-    this.setState( this._off )
-  }
-
-  render() {
-     return <button onClick={this.toggle.bind(this) }>{this.state.label}</button>
-  }
-
-  componentDidUpdate() {
-    this.props.router && this.props.router.emit( this.props.eventName, this.state.on )
-  }
-
-  toggle() {
-    let state = this.state.on ? this._off : this._on 
-    this.setState( state )
-  }
-
+  return <button onClick={onClick}>{ running ? props.off : props.on }</button>
 
 }

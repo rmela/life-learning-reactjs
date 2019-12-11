@@ -1,0 +1,15 @@
+.App-cell {
+  font-size: 1em;
+  height: 1em;
+  width: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.active {
+  color: #60A060;
+}
+
+div.inactive {
+  color: #F0F0F0;
+}

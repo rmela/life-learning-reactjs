@@ -1,4 +1,3 @@
-
 class Game {
 
   constructor( rows, cols ) {
